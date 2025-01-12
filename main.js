@@ -84,7 +84,7 @@ submitBtn.onclick = function (event) {
 
             //final result
             
-            resultHeading.textContent = `Hey ${personName.value}, According to my calculation you have ${remainingAge} left`;
+            resultHeading.textContent = `Hey ${personName.value}, According to my calculation you have ${remainingAge} years left`;
 
         }
 
