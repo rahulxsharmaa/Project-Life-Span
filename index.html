@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Span</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="main-container d-flex flex-column justify-content-center">
+        <div class="inner-container shadow p-4">
+            <form>
+                <h1 class="text-center heading-element p-3 m-3">LIFE SPAN</h1>
+                <p class="description">Fill some basic details and get to know your remaining life</p>
+
+                <div class="nameSection d-flex flex-column">
+                    <label class="" for="personName">What's your name?</label>
+                    <input class="m-1 p-1" id="personName" type="text" placeholder="Enter your Name">
+                    <p id="nameError" class="text-danger"></p>
+                </div>
+
+
+
+                <div class="ageSection d-flex flex-column">
+                    <label class="" for="age">What's your age?</label>
+                    <input class="m-1 p-1" id="age" type="number" min="1" max="100" placeholder="Enter valid age">
+                    <p id="ageError" class="text-danger"></p>
+                </div>
+
+
+                <div class="sectionGender">
+                    <label class="p-2">Gender?</label>
+                    <div>
+                        <input class="" id="genderMale" type="radio" name="gender" value="Male" checked>
+                        <label class="" for="genderMale" >Male</label>
+                        <input class="" id="genderFemale" type="radio" name="gender" value="Female">
+                        <label class="" for="genderFemale">Female</label>
+                    </div>
+                </div>
+
+
+
+
+                <div>
+                    <label class="p-2">Do you smoke?</label>
+                    <div>
+                        <input id="smokeTrue" type="radio" name="smoke" value="Yes">
+                        <label for="smokeTrue">Yes</label>
+                        <input id="smokeFalse" type="radio" name="smoke" value="No" checked>
+                        <label for="smokeFalse">No</label>
+                    </div>
+
+                </div>
+                <div>
+                    <label class="p-2">Do you drink alcohol?</label>
+                    <div>
+                        <input id="alcoholTrue" type="radio" name="alcohol" value="Yes">
+                        <label for="alcoholTrue">Yes</label>
+                        <input id="alcoholFalse" type="radio" name="alcohol" value="No" checked>
+                        <label for="alcoholFalse">No</label>
+                    </div>
+                </div>
+                <div class="d-flex flex-column">
+                    <label class="p-2" for="excerciseStatus">How often do you excercise?</label>
+                    <select class="p-2" id="excerciseStatus">
+                        <option value="Regularly">Regularly</option>
+                        <option value="Sometimes">Sometimes</option>
+                        <option value="Never">Never</option>
+                    </select>
+                </div>
+
+
+                <div class="d-flex flex-column">
+                    <label class="p-2" for="junkfoodStatus">How often do you eat junk food?</label>
+                    <select class="p-2" id="junkfoodStatus">
+                        <option value="Daily">Daily</option>
+                        <option value="Sometimes">Sometimes</option>
+                        <option value="Never">Never</option>
+                    </select>
+                </div>
+
+
+                <div class="text-center mt-2 p-2">
+                    <button id="submitBtn" class="btn btn-success p-2">What's my remaining life?</button>
+                </div>
+            </form>
+
+            <p class="text-center"><span class="text-danger">NOTE:</span> This gives approximte result & might generate error also</p>
+        </div>
+
+        <div id="result" class="shadow">
+            <h2 id="resultHeading" class="text-center">You will see your result here....</h2>
+            <p id="resultPara" class="text-center"></p>
+        </div>
+    </div>
+
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
